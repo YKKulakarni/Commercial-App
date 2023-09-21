@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="titleLogo.png" />
+    <link rel="stylesheet" href="quickBuy.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickBuy</title>
+  </head>
+  <body>
+    <!-- Primary NavBar starts -->
+    <header class="primary-nav">
+      <img src="navLogo.png" alt="" />
+      <div class="nav-items">
+        <div class="nav-loc">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-geo-alt-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+            />
+          </svg>
+          <div class="nav-text">
+            <p class="primary-text">Location</p>
+            <h6 class="primary-subheading">Bengaluru</h6>
+          </div>
+        </div>
+        <div class="search-bar">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Recipient's username"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+              style="width: 1000px"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="sign-in">
+          <p class="primary-text">Hello,</p>
+          <h6 class="primary-subheading">Sign In</h6>
+        </div>
+        <div class="order">
+          <p class="primary-text">Returns</p>
+          <h6 class="primary-subheading">& Orders</h6>
+        </div>
+        <div class="cart">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-cart3"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+            />
+          </svg>
+          <h6 class="primary-subheading">Cart</h6>
+        </div>
+      </div>
+    </header>
+    <!-- Primary NavBar ends -->
+
+    <!-- Secondary NavBar starts -->
+    <div class="second-nav">
+      <a href="#cloth">Clothes</a>
+      <a href="">Fashion</a>
+      <a href="">Electronics</a>
+      <a href="">Home Appliences</a>
+      <a href="">Footware</a>
+      <a href="">Groceries</a>
+    </div>
+
+    <!-- Secondary NavBar ends -->
+
+    <!-- Home section starts -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="4000"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="home-Image1.jpg" class="d-block" alt="No Image" />
+        </div>
+        <div class="carousel-item">
+          <img src="home-Image2.jpg" class="d-block" alt="No Image" />
+        </div>
+        <div class="carousel-item">
+          <img src="home-Image3.jpg" class="d-block" alt="No Image" />
+        </div>
+        <div class="carousel-item">
+          <img src="home-Image4.jpg" class="d-block" alt="No Image" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="home-wrapper">
+      <div class="home-container">
+        <h3>Revamp your home in style</h3>
+        <div class="home-container-image-wrapper">
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+        </div>
+        <a href="">Explore all</a>
+      </div>
+      <div class="home-container">
+        <h3>Revamp your home in style</h3>
+        <div class="home-container-image-wrapper">
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+        </div>
+        <a href="">Explore all</a>
+      </div>
+      <div class="home-container">
+        <h3>Revamp your home in style</h3>
+        <div class="home-container-image-wrapper">
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+        </div>
+        <a href="">Explore all</a>
+      </div>
+      <div class="home-container">
+        <h3>Revamp your home in style</h3>
+        <div class="home-container-image-wrapper">
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+          <div class="home-container-wrap">
+            <img src="wrapper-one-Image1.jpg" alt="" />
+            <p>
+              Bed sheets, curtains <br />
+              & more
+            </p>
+          </div>
+        </div>
+        <a href="">Explore all</a>
+      </div>
+    </div>
+    <!-- Home section ends -->
+    <!-- Clothes section starts -->
+    <div class="cloth-wrapper" id="cloth">
+      <h2>Bestsellers in Indian Clothing</h2>
+      <div class="cloth-wrapper-container">
+        <div class="home-container">
+          <h3>Men in style</h3>
+          <div class="home-container-image-wrapper">
+            <div class="home-container-wrap">
+              <img src="wrapper-one-Image1.jpg" alt="" />
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="home-container-wrap">
+              <img src="wrapper-one-Image1.jpg" alt="" />
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="home-container-wrap">
+              <img src="wrapper-one-Image1.jpg" alt="" />
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="home-container-wrap">
+              <img src="wrapper-one-Image1.jpg" alt="" />
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+          </div>
+          <a href="">Explore all</a>
+        </div>
+        <div class="home-container">
+          <h3>Women in style</h3>
+          <div class="home-container-image-wrapper">
+            <div class="home-container-wrap">
+              <img src="wrapper-one-Image1.jpg" alt="" />
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="home-container-wrap">
+              <img src="wrapper-one-Image1.jpg" alt="" />
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="home-container-wrap">
+              <img src="wrapper-one-Image1.jpg" alt="" />
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="home-container-wrap">
+              <img src="wrapper-one-Image1.jpg" alt="" />
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+          </div>
+          <a href="">Explore all</a>
+        </div>
+        <div class="home-container">
+          <h3>Kids</h3>
+          <div class="home-container-image-wrapper">
+            <div class="home-container-wrap">
+              <img src="wrapper-one-Image1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="home-container-wrap">
+              <img src="wrapper-one-Image1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="home-container-wrap">
+              <img src="wrapper-one-Image1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="home-container-wrap">
+              <img src="wrapper-one-Image1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+          </div>
+          <a href="">Explore all</a>
+      </div>
+      </div>
+    </div>
+    <!-- Clothes section ends -->
+  </body>
+</html>
